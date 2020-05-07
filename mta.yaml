@@ -1,0 +1,58 @@
+ID: INIT_PROJECT_TEST_CONNECTION
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: db_INIT_TEST
+   type: hdb
+   path: db_INIT_TEST
+   requires:
+    - name: hdi_db_INIT_TEST
+      properties:
+        TARGET_CONTAINER: ~{hdi-container-name}
+
+
+
+    - name: cross-container-service-1
+      group: SERVICE_REPLACEMENTS
+
+      properties:
+        key: ServiceName_1
+        service: ~{the-service-name}
+                          
+
+
+
+    - name: cross-container-service-2
+      group: SERVICE_REPLACEMENTS
+
+      properties:
+        key: ServiceName_2
+        service: ~{the-service-name}
+                          
+
+
+resources:
+ - name: hdi_db_INIT_TEST
+   parameters:
+      config:
+         schema: db_INIT
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
+
+ - name: cross-container-service-1
+   parameters:
+      service-name: gis_repo_grantor
+   properties:
+      the-service-name: ${service-name}
+   type: org.cloudfoundry.existing-service
+
+
+ - name: cross-container-service-2
+   parameters:
+      service-name: eccqas_repo_grantor
+   properties:
+      the-service-name: ${service-name}
+   type: org.cloudfoundry.existing-service
+

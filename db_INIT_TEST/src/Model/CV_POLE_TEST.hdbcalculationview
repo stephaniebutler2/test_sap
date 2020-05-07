@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_POLE_TEST" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_POLE_TEST"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="S_ZPOLE_OUTAGE">
+    <resourceUri>S_ZPOLE_OUTAGE</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+    <viewAttributes>
+      <viewAttribute id="YEAR"/>
+      <viewAttribute id="Occurrence"/>
+      <viewAttribute id="Recordnumber"/>
+      <viewAttribute id="OutageID"/>
+      <viewAttribute id="DistrictCode"/>
+      <viewAttribute id="SubstationCode"/>
+      <viewAttribute id="SubstationName"/>
+      <viewAttribute id="Circuit"/>
+      <viewAttribute id="Outagetype"/>
+      <viewAttribute id="Device"/>
+      <viewAttribute id="OHUG"/>
+      <viewAttribute id="CasueCategory"/>
+      <viewAttribute id="Cause"/>
+      <viewAttribute id="CasueDescription"/>
+      <viewAttribute id="2ndCasue"/>
+      <viewAttribute id="2ndcause_description"/>
+      <viewAttribute id="IsolatingDevice"/>
+      <viewAttribute id="DamageDevice"/>
+      <viewAttribute id="FromFacility"/>
+      <viewAttribute id="ToFacility"/>
+      <viewAttribute id="Duration"/>
+      <viewAttribute id="SustainedcustImpact"/>
+      <viewAttribute id="CMI"/>
+      <viewAttribute id="MED"/>
+      <viewAttribute id="PSPS"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="S_ZPOLE_OUTAGE">
+      <mapping xsi:type="Calculation:AttributeMapping" target="YEAR" source="YEAR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="Occurrence" source="Occurrence"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="Recordnumber" source="Recordnumber"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="OutageID" source="OutageID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DistrictCode" source="DistrictCode"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SubstationCode" source="SubstationCode"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SubstationName" source="SubstationName"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="Circuit" source="Circuit"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="Outagetype" source="Outagetype"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="Device" source="Device"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="OHUG" source="OHUG"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CasueCategory" source="CasueCategory"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="Cause" source="Cause"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CasueDescription" source="CasueDescription"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="2ndCasue" source="2ndCasue"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="2ndcause_description" source="2ndcause_description"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="IsolatingDevice" source="IsolatingDevice"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DamageDevice" source="DamageDevice"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FromFacility" source="FromFacility"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ToFacility" source="ToFacility"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="Duration" source="Duration"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SustainedcustImpact" source="SustainedcustImpact"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CMI" source="CMI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MED" source="MED"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PSPS" source="PSPS"/>
+    </input>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Projection_1">
+  <attributes>
+    <attribute id="Occurrence" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Occurrence"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Occurrence"/>
+    </attribute>
+    <attribute id="OutageID" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OutageID"/>
+      <keyMapping columnObjectName="Projection_1" columnName="OutageID"/>
+    </attribute>
+    <attribute id="DistrictCode" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DistrictCode"/>
+      <keyMapping columnObjectName="Projection_1" columnName="DistrictCode"/>
+    </attribute>
+    <attribute id="SubstationCode" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SubstationCode"/>
+      <keyMapping columnObjectName="Projection_1" columnName="SubstationCode"/>
+    </attribute>
+    <attribute id="SubstationName" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SubstationName"/>
+      <keyMapping columnObjectName="Projection_1" columnName="SubstationName"/>
+    </attribute>
+    <attribute id="Circuit" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Circuit"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Circuit"/>
+    </attribute>
+    <attribute id="Outagetype" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Outagetype"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Outagetype"/>
+    </attribute>
+    <attribute id="Device" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Device"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Device"/>
+    </attribute>
+    <attribute id="OHUG" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="OHUG"/>
+      <keyMapping columnObjectName="Projection_1" columnName="OHUG"/>
+    </attribute>
+    <attribute id="CasueCategory" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CasueCategory"/>
+      <keyMapping columnObjectName="Projection_1" columnName="CasueCategory"/>
+    </attribute>
+    <attribute id="Cause" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Cause"/>
+      <keyMapping columnObjectName="Projection_1" columnName="Cause"/>
+    </attribute>
+    <attribute id="CasueDescription" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CasueDescription"/>
+      <keyMapping columnObjectName="Projection_1" columnName="CasueDescription"/>
+    </attribute>
+    <attribute id="2ndCasue" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="2ndCasue"/>
+      <keyMapping columnObjectName="Projection_1" columnName="2ndCasue"/>
+    </attribute>
+    <attribute id="2ndcause_description" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="2ndcause_description"/>
+      <keyMapping columnObjectName="Projection_1" columnName="2ndcause_description"/>
+    </attribute>
+    <attribute id="IsolatingDevice" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="IsolatingDevice"/>
+      <keyMapping columnObjectName="Projection_1" columnName="IsolatingDevice"/>
+    </attribute>
+    <attribute id="DamageDevice" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DamageDevice"/>
+      <keyMapping columnObjectName="Projection_1" columnName="DamageDevice"/>
+    </attribute>
+    <attribute id="FromFacility" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FromFacility"/>
+      <keyMapping columnObjectName="Projection_1" columnName="FromFacility"/>
+    </attribute>
+    <attribute id="ToFacility" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ToFacility"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ToFacility"/>
+    </attribute>
+    <attribute id="MED" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MED"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MED"/>
+    </attribute>
+    <attribute id="PSPS" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PSPS"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PSPS"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="YEAR" order="1" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="YEAR"/>
+      <measureMapping columnObjectName="Projection_1" columnName="YEAR"/>
+    </measure>
+    <measure id="Recordnumber" order="3" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Recordnumber"/>
+      <measureMapping columnObjectName="Projection_1" columnName="Recordnumber"/>
+    </measure>
+    <measure id="Duration" order="21" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Duration"/>
+      <measureMapping columnObjectName="Projection_1" columnName="Duration"/>
+    </measure>
+    <measure id="SustainedcustImpact" order="22" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="SustainedcustImpact"/>
+      <measureMapping columnObjectName="Projection_1" columnName="SustainedcustImpact"/>
+    </measure>
+    <measure id="CMI" order="23" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="CMI"/>
+      <measureMapping columnObjectName="Projection_1" columnName="CMI"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="100" y="105"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="20" y="215"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

@@ -1,0 +1,20 @@
+{
+  "gis_repo_grantor": {
+    "object_owner" : {
+      "schema_privileges":[
+        {
+          "reference":"GIS",
+          "privileges_with_grant_option":["SELECT", "SELECT METADATA"]
+        }
+      ]
+    },
+    "application_user" : {
+      "schema_privileges":[
+        {
+          "reference":"GIS",
+          "privileges":["SELECT", "SELECT METADATA"]
+        }
+      ]
+    }
+  }
+}

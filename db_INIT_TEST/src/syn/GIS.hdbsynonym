@@ -1,0 +1,8 @@
+{
+  "S_ZPOLE_OUTAGE": {
+    "target": {
+      "object": "ZPOLE_OUTAGE",
+      "schema": "GIS"
+    }
+  }
+}   

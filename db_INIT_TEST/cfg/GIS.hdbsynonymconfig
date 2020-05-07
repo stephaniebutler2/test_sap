@@ -1,0 +1,8 @@
+{
+  "S_ZPOLE_OU?TAGE": {
+    "target": {
+      "object": "ZPOLE_OUTAGE",
+      "schema.configure": "gis_repo_grantor/schema"
+    }
+  }
+}
